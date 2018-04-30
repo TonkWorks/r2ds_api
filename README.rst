@@ -6,7 +6,7 @@ r2ds-api
 .. image:: https://img.shields.io/pypi/v/r2ds_api.svg
         :target: https://pypi.python.org/pypi/r2ds_api
 
-.. image:: https://img.shields.io/travis/tonkworks/r2ds_api.svg
+.. image:: https://img.shields.io/travis/TonkWorks/r2ds_api.svg
         :target: https://travis-ci.org/TonkWorks/r2ds_api
 
 .. image:: https://readthedocs.org/projects/r2ds-api/badge/?version=latest
@@ -14,7 +14,7 @@ r2ds-api
         :alt: Documentation Status
 
 
-.. image:: https://pyup.io/repos/github/tonkworks/r2ds_api/shield.svg
+.. image:: https://pyup.io/repos/github/TonkWorks/r2ds_api/shield.svg
      :target: https://pyup.io/repos/github/TonkWorks/r2ds_api/
      :alt: Updates
 
