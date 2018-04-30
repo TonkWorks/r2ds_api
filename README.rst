@@ -23,26 +23,27 @@ r2ds-api
 R2DS Python API
 
 
-* Free software: MIT license
+QuickStart
+----------
+
 * Documentation: https://r2ds-api.readthedocs.io.
 
+::
 
-QuickStart
---------
-
-```
-pip install r2ds_api
-```
-
-```
-import r2ds_api
+    pip install r2ds_api
 
 
-response = r2ds.get("EXAMPLE AUTH KEY", {
-"score__gt": 100
-})
-print(response.json())
-```
+Example
+-------
+
+::
+
+    import r2ds_api
+
+    response = r2ds.get("EXAMPLE AUTH KEY", {
+        "score__gt": 100
+    })
+    print(response.json())
 
 Features
 --------
@@ -53,7 +54,6 @@ Features
 
 
 More Information
---------
+----------------
 * https://r2ds.tonkworks.com/
 * https://r2ds.tonkworks.com/api/
-* https://r2ds-api.readthedocs.io/en/latest/
