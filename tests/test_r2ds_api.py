@@ -6,20 +6,19 @@
 import pytest
 
 
-from r2ds_api import r2ds_api
+import r2ds_api
 
+TEST_AUTH_TOKEN = "TEST_AUTH_TOKEN"
+def test_get():
+    """API get request."""
+    response = r2ds_api.get(TEST_AUTH_TOKEN, params={
+        "score__gt": 100
+    })
+    assert response.status_code == 200
 
-@pytest.fixture
-def response():
-    """Sample pytest fixture.
-
-    See more at: http://doc.pytest.org/en/latest/fixture.html
-    """
-    # import requests
-    # return requests.get('https://github.com/audreyr/cookiecutter-pypackage')
-
-
-def test_content(response):
-    """Sample pytest test function with the pytest fixture as an argument."""
-    # from bs4 import BeautifulSoup
-    # assert 'GitHub' in BeautifulSoup(response.content).title.string
+def test_topic():
+    """API topic request."""
+    response = r2ds_api.topic(TEST_AUTH_TOKEN, topic_id=2, params={
+        "score__gt": 100
+    })
+    assert response.status_code == 200
